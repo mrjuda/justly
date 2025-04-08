@@ -86,3 +86,71 @@ li:hover {
   cursor: pointer;
 }
 
+.modal {
+  width: 100%;
+  height: 130vh;
+  position: absolute;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.home-container {
+  background-image: url('../media/pictures/background.jpg');
+  background-size: cover;
+  background-position: 50% 50%;
+  width: 100%;
+  height: 130vh;
+  display: flex;
+  justify-content: center;
+}
+
+.presentation-container {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+  margin-top: 150px;
+  padding: 10px;
+  color: #ffffff;
+  z-index: 1;
+}
+
+.presentation-container h3 {
+  letter-spacing: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300; 
+}
+
+.presentation-container h1 {
+  font-size: 5rem;
+  text-align: center;  
+}
+
+.presentation-container span {
+  color: #cdba6d;
+}
+
+.presentation-container p {
+  text-align: center;
+  font-size: 1.1rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+
+.presentation-container button {
+  width: 150px;
+  height: 50px;
+  background-color: #cdba6d;
+  color: #000000;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  border: 2px solid #c8b050;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.presentation-container button:hover {
+  background-color: transparent;
+  color: #ffffff;
+}
