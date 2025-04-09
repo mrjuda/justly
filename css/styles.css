@@ -237,3 +237,97 @@ li:hover {
 #divider-white {
   border-top: 3px solid #ffffff;
 }
+
+.welcome-container {
+  width: 100%;
+  height: 140vh;
+}
+
+.signature-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.signature-content {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: end;
+}
+
+.signature-text {
+  width: 70%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 30px;
+  padding: 0 10px;
+  margin-bottom: 90px;
+}
+
+.signature-title {
+  width: 100%;
+}
+
+.signature-title h1 {
+  font-size: 2.5rem;
+  color: #cdba6d;
+}
+
+.signature-title h5 {
+  font-weight: 300;
+  letter-spacing: 3px;
+}
+
+.signature-text span {
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+}
+
+.signature-text p {
+  font-family: 'Poppins', sans-serif;
+  text-align: justify;
+}
+
+.signature-button-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.signature-button-container button {
+  width: 150px;
+  height: 50px;
+  background-color: #cdba6d;
+  color: #000000;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  border: 2px solid #c8b050;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.signature-button-container button:hover {
+  background-color: transparent;
+}
+
+.signature-button-container img {
+  width: 100px;
+  height: auto;
+}
+
+.attorney-container {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: end;
+}
+
+.attorney-img {
+  margin-left: 50px;
+}
+
