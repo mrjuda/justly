@@ -162,10 +162,10 @@ li:hover {
 
 .destaks-container {
   width: 100%;
-  height: 300px;
+  height: 500px;
   padding: 0 100px;
   position: absolute;
-  top: 115vh;
+  top: 100vh;
 }
 
 .destaks-content {
@@ -191,43 +191,31 @@ li:hover {
   background-color: #353e47;
 }
 
+#square-2 {
+  background-color: #323a43;
+}
+
+#square-3 {
+  background-color: #2e353d;
+  /* padding: 0 100px; */
+}
+
 #square-1 i {
   color: #c8b050;
   font-size: 3rem;
-}
-
-.destaks-span {
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-align: center;
-}
-
-.destaks-paragraph {
-  font-size: 1.2rem;
-  font-weight: 500;
-  text-align: center;
-}
-
-#destaks-span-gold {
-  color: #c8b050;
-}
-
-#square-2 {
-  background-color: #323a43;
 }
 
 #gavel-icon {
   font-size: 3rem;
 }
 
-#square-3 {
-  background-color: #2e353d;
-  padding: 0 100px;
-}
-
 #square-3 i {
   color: #c8b050;
   font-size: 3rem;
+}
+
+#destaks-span-gold {
+  color: #c8b050;
 }
 
 .divider {
@@ -240,6 +228,18 @@ li:hover {
 
 #divider-white {
   border-top: 3px solid #ffffff;
+}
+
+.destaks-span {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.destaks-paragraph {
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: center;
 }
 
 
@@ -823,16 +823,20 @@ footer {
 @media (max-width: 1440px) {
 
   /* SECTION 0: HEADER */
+  header nav {
+    width: 65%;
+  }
   /* SECTION 1: MODAL & HOME */
   /* SECTION 2: DESTAKS */
   .destaks-content {
     height: 55vh;
   }
+
   .content {
     padding: 0 90px;
   }
 
-  #square-3 {
+  #square-1, #square-2, #square-3 {
     padding: 0 60px;
   }
 
@@ -872,6 +876,10 @@ footer {
   /* SECTION 0: HEADER */
   header {
     padding: 0 40px;
+  }
+
+  header nav {
+    width: 55%;
   }
 
   /* SECTION 1: MODAL & HOME */
@@ -921,8 +929,12 @@ footer {
 @media (max-width: 1024px) {
 
   /* SECTION 0: HEADER */
+  header nav {
+    width: 65%;
+  }
+
   .site-menu ul {
-    width: 100%;
+    /* width: 100%; */
   }
 
   /* SECTION 0: HEADER */
@@ -936,7 +948,7 @@ footer {
     padding: 0 60px;
   }
 
-  #square-3 {
+  #square-1, #square-2, #square-3 {
     padding: 0 40px;
   }
 
@@ -1109,6 +1121,16 @@ footer {
 
   /* SECTION 0: HEADER */
   /* SECTION 1: MODAL & HOME */
+  .modal {
+    height: 150vh;
+  }
+
+  .home-container {
+    height: 150vh;
+    align-items: flex-start;
+    padding-top: 170px;
+  }
+
   /* SECTION 2: DESTAKS */
   /* SECTION 3: WELCOME & SIGNATURE*/
   .welcome-container {
@@ -1147,6 +1169,30 @@ footer {
 
   /* SECTION 0: HEADER */
   /* SECTION 1: MODAL & HOME */
+  .modal {
+    height: 150vh;
+  }
+
+  .home-container {
+    height: 150vh;
+  }
+
+  .presentation-container {
+    height: max-content;
+  }
+
+  .presentation-container h3 {
+    /* font-size: 3rem; */
+    text-align: center;
+  }
+
+  .presentation-container h1 {
+    font-size: 3.6rem;
+  }
+
+  
+
+
   /* SECTION 2: DESTAKS */
   /* SECTION 3: WELCOME & SIGNATURE*/
   .welcome-container {
