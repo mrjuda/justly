@@ -11,6 +11,8 @@
   font-family: 'Poppins', sans-serif;
 }
 
+/* SECTION 0: HEADER */
+
 header {
   position: fixed;
   top: 0;
@@ -86,7 +88,8 @@ li:hover {
   cursor: pointer;
 }
 
-/* SECTION 1 */
+
+/* SECTION 1: MODAL + HOME */
 
 .modal {
   width: 100%;
@@ -154,7 +157,8 @@ li:hover {
   color: #ffffff;
 }
 
-/* SECTION 2 */
+
+/* SECTION 2: DESTAKS */
 
 .destaks-container {
   width: 100%;
@@ -238,7 +242,8 @@ li:hover {
   border-top: 3px solid #ffffff;
 }
 
-/* SECTION 3 */
+
+/* SECTION 3: WELCOME & SIGNATURE*/
 
 .welcome-container {
   width: 100%;
@@ -331,7 +336,7 @@ li:hover {
 }
 
 
-/* SECTION 4 */
+/* SECTION 4: OUR SERVICES*/
 
 .our-services-container {
   width: 100%;
@@ -425,7 +430,8 @@ li:hover {
   font-weight: 500;
 }
 
-/* SECTION 5 */
+
+/* SECTION 5: TESTIMONIALS */
 
 .testimonials-container {
   width: 100%;
@@ -521,7 +527,8 @@ li:hover {
   background-image: url('../media/pictures/testimonials03.jpg');
 }
 
-/* SECTION 6 */
+
+/* SECTION 6: FORM */
 
 .form-container {
   width: 100%;
@@ -651,7 +658,8 @@ li:hover {
   color: #ffffff;
 }
 
-/* SECTION 7 - FOOTER*/
+
+/* SECTION 7: FOOTER*/
 
 footer {
   width: 100%;
@@ -785,6 +793,9 @@ footer {
   font-size: 1.2rem;
 }
 
+
+/* SECTION 8: COPYRIGHT */
+
 .copyright {
   width: 100%;
   height: 50px;
@@ -802,13 +813,18 @@ footer {
 /* ################################################# */
 /* ##############   MEDIA QUERIES   ################ */
 /* ################################################# */
+/* << 415 <> 600 <> 768 <> 835 <> 1024 <> 1280 <> 1440 >> */
 
 /* ################################################ */
 /* #################   MAX 1440  ################## */
 /* ################################################ */
+/* 1280 <> 1440 */
 
 @media (max-width: 1440px) {
-  
+
+  /* SECTION 0: HEADER */
+  /* SECTION 1: MODAL & HOME */
+  /* SECTION 2: DESTAKS */
   .destaks-content {
     height: 55vh;
   }
@@ -820,10 +836,16 @@ footer {
     padding: 0 60px;
   }
 
+  /* SECTION 3: WELCOME & SIGNATURE*/
+  /* SECTION 4: OUR SERVICES*/
+  /* SECTION 5: TESTIMONIALS */
+
   .testimonials-cards-container {
     padding: 0 100px;
   }
 
+  /* SECTION 6: FORM */
+  /* SECTION 7: FOOTER*/
   footer {
     padding: 220px 60px 80px 60px;
   }
@@ -837,37 +859,48 @@ footer {
     padding: 0 55px 0 10px;
   }
 
+  /* SECTION 8: COPYRIGHT */
 }
 
 /* ################################################ */
 /* #################   MAX 1280  ################## */
 /* ################################################ */
+/* 1024 <> 1280 */
 
 @media (max-width: 1280px) {
+
+  /* SECTION 0: HEADER */
   header {
     padding: 0 40px;
   }
 
+  /* SECTION 1: MODAL & HOME */
   .presentation-container {
     width: 70%;
   }
 
+  /* SECTION 2: DESTAKS */
   .destaks-container {
     padding: 0 60px;
   }
 
+  /* SECTION 3: WELCOME & SIGNATURE*/
+  /* SECTION 4: OUR SERVICES*/
   .our-services-content {
     padding: 0 40px;
   }
 
+  /* SECTION 5: TESTIMONIALS */
   .testimonials-cards-container {
     padding: 0 110px;
   }
 
+  /* SECTION 6: FORM */
   .form-content {
     padding: 80px 30px;
   }
 
+  /* SECTION 7: FOOTER*/
   footer {
     padding: 80px 30px;
   }
@@ -875,19 +908,26 @@ footer {
   .posts {
     margin: 40px 0;
   }
+  
+  /* SECTION 8: COPYRIGHT */
 
 }
 
-/* ################################################ */
+/* ################################################# */
 /* #################   MAX 1024  ################### */
-/* ################################################ */
+/* ################################################# */
+/* 835 <> 1024 */
 
 @media (max-width: 1024px) {
 
+  /* SECTION 0: HEADER */
   .site-menu ul {
     width: 100%;
   }
 
+  /* SECTION 0: HEADER */
+  /* SECTION 1: MODAL & HOME */
+  /* SECTION 2: DESTAKS */
   .destaks-container {
     padding: 0 20px;
   }
@@ -900,13 +940,20 @@ footer {
     padding: 0 40px;
   }
 
+  /* SECTION 3: WELCOME & SIGNATURE*/
+  /* SECTION 4: OUR SERVICES*/
+  /* SECTION 5: TESTIMONIALS */
   .testimonials-cards-container {
     padding: 0 50px;
   }
 
+  /* SECTION 6: FORM */
   .form-content {
     padding: 120px 20px 60px 20px;
   }
+
+  /* SECTION 7: FOOTER*/
+  /* SECTION 8: COPYRIGHT */
 
 }
 
@@ -914,8 +961,11 @@ footer {
 /* ################################################ */
 /* #################   MAX 835  ################### */
 /* ################################################ */
+/* 768 <> 835 */
 
 @media (max-width: 835px) {
+
+  /* SECTION 0: HEADER */
   nav {
     display: none;
   }
@@ -924,6 +974,7 @@ footer {
     display: block;
   }
 
+  /* SECTION 1: MODAL & HOME */
   .home-container {
     background-position: 70% 50%;
     align-items: center;
@@ -934,6 +985,7 @@ footer {
     margin-top: 0;
   }
 
+  /* SECTION 2: DESTAKS */
   .destaks-container {
     padding: 0 40px;
     top: 150vh;
@@ -950,6 +1002,7 @@ footer {
     padding: 0 20px;
   }
 
+  /* SECTION 3: WELCOME & SIGNATURE*/
   .welcome-container {
     height: 160vh;
   }
@@ -970,6 +1023,7 @@ footer {
     width: 90%;
   }
 
+  /* SECTION 4: OUR SERVICES*/
   .our-services-container {
     margin-top: 100px;
     height: max-content;
@@ -979,6 +1033,7 @@ footer {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  /* SECTION 5: TESTIMONIALS */
   .testimonials-container {
     height: 110vh;
   }
@@ -997,6 +1052,7 @@ footer {
     display: none;
   }
 
+  /* SECTION 6: FORM */
   .form-container {
     flex-direction: column;
     height: max-content;
@@ -1014,6 +1070,7 @@ footer {
     row-gap: 30px;
   }
 
+  /* SECTION 7: FOOTER*/
   footer {
     padding: 20px 40px 0 40px;
     height: 180vh;
@@ -1039,15 +1096,21 @@ footer {
     padding: 0 140px 0 10px;
   }
 
+  /* SECTION 8: COPYRIGHT */
 }
 
 
 /* ################################################ */
 /* #################   MAX 768  ################### */
 /* ################################################ */
+/* 600 <> 768 */
 
 @media (max-width: 768px) {
 
+  /* SECTION 0: HEADER */
+  /* SECTION 1: MODAL & HOME */
+  /* SECTION 2: DESTAKS */
+  /* SECTION 3: WELCOME & SIGNATURE*/
   .welcome-container {
     height: 180vh;
   }
@@ -1064,17 +1127,28 @@ footer {
     width: 45%;
   }
 
+  /* SECTION 4: OUR SERVICES*/
+  /* SECTION 5: TESTIMONIALS */
+  /* SECTION 6: FORM */
+  /* SECTION 7: FOOTER*/
   footer {
     height: 100vh;
   }
+
+  /* SECTION 8: COPYRIGHT */
 }
 
 /* ################################################ */
 /* #################   MAX 600  ################### */
 /* ################################################ */
+/* 415 <> 600 */
 
 @media (max-width: 600px) {
 
+  /* SECTION 0: HEADER */
+  /* SECTION 1: MODAL & HOME */
+  /* SECTION 2: DESTAKS */
+  /* SECTION 3: WELCOME & SIGNATURE*/
   .welcome-container {
     height: 240vh;
   }
@@ -1100,6 +1174,7 @@ footer {
     width: auto;
   }
 
+  /* SECTION 4: OUR SERVICES*/
   .our-services-content {
     padding: 0 10px 0 20px;
   }
@@ -1108,4 +1183,40 @@ footer {
     width: 95%;
     padding: 20px 10px 0 10px;
   }
+
+  /* SECTION 5: TESTIMONIALS */
+  /* SECTION 6: FORM */
+  /* SECTION 7: FOOTER*/
+  /* SECTION 8: COPYRIGHT */
 }
+
+
+/* ################################################ */
+/* #################   MAX 415  ################### */
+/* ################################################ */
+/* 0 << 415 */
+
+@media (max-width: 415px) {
+  /* SECTION 0: HEADER */
+  /* SECTION 1: MODAL & HOME */
+  /* SECTION 2: DESTAKS */
+  /* SECTION 3: WELCOME & SIGNATURE*/
+  /* SECTION 4: OUR SERVICES*/
+  /* SECTION 5: TESTIMONIALS */
+  /* SECTION 6: FORM */
+  /* SECTION 7: FOOTER*/
+  /* SECTION 8: COPYRIGHT */
+}
+
+
+
+
+/* SECTION 0: HEADER */
+/* SECTION 1: MODAL & HOME */
+/* SECTION 2: DESTAKS */
+/* SECTION 3: WELCOME & SIGNATURE*/
+/* SECTION 4: OUR SERVICES*/
+/* SECTION 5: TESTIMONIALS */
+/* SECTION 6: FORM */
+/* SECTION 7: FOOTER*/
+/* SECTION 8: COPYRIGHT */
