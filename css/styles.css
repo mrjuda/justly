@@ -93,7 +93,6 @@ li:hover {
 
 .modal {
   width: 100%;
-  height: 130vh;
   position: absolute;
   background-color: rgba(0,0,0,0.5);
 }
@@ -103,7 +102,6 @@ li:hover {
   background-size: cover;
   background-position: 50% 50%;
   width: 100%;
-  height: 130vh;
   display: flex;
   justify-content: center;
 }
@@ -157,15 +155,21 @@ li:hover {
   color: #ffffff;
 }
 
+.modal, .home-container {
+  height: 110vh;
+}
 
 /* SECTION 2: DESTAKS */
 
 .destaks-container {
+  top: 90vh;
+}
+
+.destaks-container {
   width: 100%;
-  height: 500px;
+  height: 400px;
   padding: 0 100px;
   position: absolute;
-  top: 100vh;
 }
 
 .destaks-content {
@@ -247,12 +251,17 @@ li:hover {
 
 .welcome-container {
   width: 100%;
-  height: 140vh;
+  /* height: 90vh; */
+  margin-top: 40vh;
+  /* padding: 5vh 0; */
+  /* position: relative;
+  top: 40vh; */
 }
 
 .signature-container {
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
+  /* margin-top: 5vh; */
   display: flex;
 }
 
@@ -262,12 +271,12 @@ li:hover {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  justify-content: end;
+  /* justify-content: end; */
 }
 
 .signature-text {
   width: 70%;
-  height: 50%;
+  /* height: 50%; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -340,7 +349,7 @@ li:hover {
 
 .our-services-container {
   width: 100%;
-  height: 110vh;
+  height: 90vh;
   background-color: #323a43;
   display: flex;
   flex-direction: column;
@@ -349,7 +358,7 @@ li:hover {
 .our-services-title {
   height: 30%;
   width: 100%;
-  padding-top: 120px;
+  padding-top: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -813,7 +822,12 @@ footer {
 /* ################################################# */
 /* ##############   MEDIA QUERIES   ################ */
 /* ################################################# */
+
+
+
 /* << 415 <> 600 <> 768 <> 835 <> 1024 <> 1280 <> 1440 >> */
+
+
 
 /* ################################################ */
 /* #################   MAX 1440  ################## */
@@ -827,20 +841,30 @@ footer {
     width: 65%;
   }
   /* SECTION 1: MODAL & HOME */
+  .modal, .home-container {
+    height: 110vh;
+  }
+
   /* SECTION 2: DESTAKS */
+  .destaks-container {
+    top: 90vh;
+  } 
+
   .destaks-content {
-    height: 55vh;
+    height: 40vh;
   }
 
   .content {
     padding: 0 90px;
   }
 
-  #square-1, #square-2, #square-3 {
-    padding: 0 60px;
+  
+  /* SECTION 3: WELCOME & SIGNATURE*/
+  .welcome-container {
+    margin-top: 30vh;
   }
 
-  /* SECTION 3: WELCOME & SIGNATURE*/
+
   /* SECTION 4: OUR SERVICES*/
   /* SECTION 5: TESTIMONIALS */
 
@@ -864,6 +888,7 @@ footer {
   }
 
   /* SECTION 8: COPYRIGHT */
+
 }
 
 /* ################################################ */
@@ -888,8 +913,18 @@ footer {
   }
 
   /* SECTION 2: DESTAKS */
+  
   .destaks-container {
+    top: 90vh;
     padding: 0 60px;
+  } 
+
+  .destaks-content {
+    height: 40vh;
+  }
+
+  .content {
+    padding: 0;
   }
 
   /* SECTION 3: WELCOME & SIGNATURE*/
@@ -933,10 +968,6 @@ footer {
     width: 65%;
   }
 
-  .site-menu ul {
-    /* width: 100%; */
-  }
-
   /* SECTION 0: HEADER */
   /* SECTION 1: MODAL & HOME */
   /* SECTION 2: DESTAKS */
@@ -944,16 +975,58 @@ footer {
     padding: 0 20px;
   }
 
-  .content {
-    padding: 0 60px;
-  }
-
   #square-1, #square-2, #square-3 {
-    padding: 0 40px;
+    padding: 0 25px;
   }
 
   /* SECTION 3: WELCOME & SIGNATURE*/
+  .welcome-container {
+    /* height: 90vh; */
+  }
+
+  .signature-container {
+    height: 100%;
+    padding: 0;
+  }
+
+  .signature-content {
+    /* height: max-content; */
+  }
+
+  .signature-text {
+    width: 80%;
+    margin-bottom: 0;
+  }
+
+  .attorney-container {
+    /* display: flex;
+    align-items: end; */
+    height: 100%;
+    width: 45vw;
+  }
+
+  .attorney-img {
+    width: 45vw;
+    margin-left: 10px;
+  }
+
   /* SECTION 4: OUR SERVICES*/
+
+  .our-services-content {
+    padding: 0 20px;
+    height: 80vh;
+  }
+
+  #service-icon {
+    font-size: 2.4rem;
+  }
+
+  .our-services-text {
+    padding: 0 10px;
+    /* width: 22vw; */
+    width: 80%;
+  }
+
   /* SECTION 5: TESTIMONIALS */
   .testimonials-cards-container {
     padding: 0 50px;
@@ -1000,11 +1073,12 @@ footer {
   /* SECTION 2: DESTAKS */
   .destaks-container {
     padding: 0 40px;
-    top: 150vh;
+    top: 120vh;
   }
 
   .destaks-content {
     grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
     row-gap: 10px;
   }
 
@@ -1016,11 +1090,12 @@ footer {
 
   /* SECTION 3: WELCOME & SIGNATURE*/
   .welcome-container {
-    height: 160vh;
+    margin-top: 125vh;
+    /* height: 120vh; */
   }
 
   .signature-container {
-    margin-top: 700px;
+    /* height: max-content; */
   }
 
   .signature-text {
@@ -1030,6 +1105,11 @@ footer {
     padding: 0 10px;
   }
 
+  .attorney-container {
+    height: 70vh;
+    align-items: end;
+  }
+
   .attorney-img {
     margin-left: 10px;
     width: 90%;
@@ -1037,7 +1117,7 @@ footer {
 
   /* SECTION 4: OUR SERVICES*/
   .our-services-container {
-    margin-top: 100px;
+    /* margin-top: 100px; */
     height: max-content;
   }
 
@@ -1121,33 +1201,49 @@ footer {
 
   /* SECTION 0: HEADER */
   /* SECTION 1: MODAL & HOME */
-  .modal {
-    height: 150vh;
+  .modal, .home-container {
+    height: 100vh;
   }
 
   .home-container {
-    height: 150vh;
     align-items: flex-start;
     padding-top: 170px;
   }
 
   /* SECTION 2: DESTAKS */
+  .destaks-container {
+    top: 110vh;
+  }
+
   /* SECTION 3: WELCOME & SIGNATURE*/
   .welcome-container {
-    height: 180vh;
+    /* align-items: end; */
+    /* height: 140vh; */
+    /* align-items: flex-start; */
+  }
+
+  .signature-container {
+    align-items: end;
+  }
+
+  .signature-text {
+    /* height: max-content; */
+    padding-bottom: 2vh;
   }
 
   .attorney-img {
     margin-left: 0;
+    /* margin-left: 50px; */
+  }
+
+  .signature-content {
+    width: 45%;
   }
 
   .attorney-container {
     width: 55%;
   }
 
-  .signature-content {
-    width: 45%;
-  }
 
   /* SECTION 4: OUR SERVICES*/
   /* SECTION 5: TESTIMONIALS */
@@ -1169,12 +1265,8 @@ footer {
 
   /* SECTION 0: HEADER */
   /* SECTION 1: MODAL & HOME */
-  .modal {
-    height: 150vh;
-  }
-
-  .home-container {
-    height: 150vh;
+  .modal, .home-container {
+    height: 115vh;
   }
 
   .presentation-container {
@@ -1190,30 +1282,39 @@ footer {
     font-size: 3.6rem;
   }
 
-  
-
-
   /* SECTION 2: DESTAKS */
+  .destaks-container {
+    top: 120vh;
+    padding: 0 4vh;
+  }
+
   /* SECTION 3: WELCOME & SIGNATURE*/
   .welcome-container {
-    height: 240vh;
+    padding: 0 2vh;
   }
 
   .signature-container {
+    /* height: 270vh; */
+  }
+
+  .signature-container {
+    margin-top: 0;
     flex-direction: column;
-    justify-content: end;
+    align-items: center;
+    /* justify-content: end; */
   }
 
   .signature-content {
     width: 95%;
-    height: 25%;
-    justify-content: end;
+    /* justify-content: center; */
+    align-items: center;
   }
 
   .attorney-container {
     width: 95%;
     height: 30%;
     justify-content: center;
+    align-items: center;
   }
 
   .attorney-img {
@@ -1221,13 +1322,38 @@ footer {
   }
 
   /* SECTION 4: OUR SERVICES*/
+  .our-services-container {
+    padding: 0 1vh;
+    height: 140vh;
+  }
+
+  .our-services-title {
+    padding: 10vh 0 2vh 0;
+    text-align: center;
+  }
+  
   .our-services-content {
-    padding: 0 10px 0 20px;
+    padding: 0;
+    height: 100%;
+    column-gap: 10px;
+    row-gap: 20px;
+  }
+
+  .our-services-square {
+    height: 100%;
+  }
+
+  .our-services-icon {
+    width: max-content;
+  }
+
+  .our-services-icon i {
+    font-size: 1.1rem;
   }
 
   .our-services-text {
-    width: 95%;
-    padding: 20px 10px 0 10px;
+    width: 90%;
+    /* padding: 20px 10px 0 10px; */
   }
 
   /* SECTION 5: TESTIMONIALS */
@@ -1266,3 +1392,4 @@ footer {
 /* SECTION 6: FORM */
 /* SECTION 7: FOOTER*/
 /* SECTION 8: COPYRIGHT */
+
